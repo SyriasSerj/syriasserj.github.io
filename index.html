@@ -15,12 +15,17 @@
     <!-- jQuery loading HTML -->
       <script>
         $(function(){
-          $("#mainPanel").load("/include/mainPanel.html"); 
+          $("#leftPanel").load("/include/leftPanel.html"); 
         });
       </script> 
       <script>
         $(function(){
           $("#navbar").load("/include/navbar.html"); 
+        });
+      </script>
+      <script>
+        $(function(){
+          $("#rightPanel").load("/include/rightPanel.html"); 
         });
       </script> 
 
@@ -34,8 +39,9 @@
       <div class="row" id="gridMainPanel">
         <div class="col-sm-0 col-sm-2" id="colLR"></div>
         
-        <div class="col-md-8">
-          <div id="mainPanel"></div>
+        <div class="col-md-8 d-flex" id="mainPanel">
+          <div class="col-md-6" id="leftPanel"></div>
+          <div class="col-md-2" id="rightPanel"></div>
         </div>
 
         <div class="col-sm-0 col-sm-2" id="colLR"></div>
