@@ -1,43 +1,71 @@
 <html lang="en">
   <head>
+    <!-- Load custom templates -->
     <script src="js/template.js" type="text/javascript" defer></script>
 
+    <!--boostrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--boostrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
     <main-head></main-head>
-    
     <!-- jQuery Slim Min -->
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-    <!-- jQuery loading HTML -->
-    <script>
-      $(function(){
-        $("#leftPanel").load("/include/leftPanel.html"); 
-      });
-    </script> 
-    <script>
-      $(function(){
-        $("#rightPanel").load("/include/rightPanel.html"); 
-      });
-    </script>
 
   </head>
 
   <body>
-    <!-- Navbar -->     
+    <!-- Navbar -->
     <main-navbar></main-navbar>
 
-    <div class="container-fluid">
-      <div class="row" id="gridMainPanel">
+    <!-- Main Content -->
+    <div class="container-fluid" id="gridMainPanel">
+      <div class="row" >
         <div class="col-sm-0" id="colLR"></div>
-        
+        <!-- Center content -->
         <div class="col-md d-flex justify-content-center" id="mainPanel">
-          <div class="col-5 col-sm-9" id="leftPanel"></div>
-          <div class="col-5 col-sm-3" id="rightPanel"></div>
+          <!-- LeftPanel -->
+          <div class="col-5 col-sm-9 lPanel" id="textPanel">
+              <p>
+                Is that all you shitposting fucks can say?!? Duurrhhlll... Based, based, cringe, cringe, based, based, cringe, cringe, cringe, based, cringe... I feel like I'm in a FUCKING asylum full of dementia-ridden old people that can do nothing but repeat the same FUCKING words on loop like a fucking broken record!!! Cringe cringe cringe cringe!!! Cringe, based, based! Onions? Onions, SNOYY!! Onions L O L onions! Cringe, BOOMER?? Le zoomer, I am BOOMER!!! No zoom zoom zoomies!! Zoomer going zoomies!! YnnnggGGHHAAHH I..FUCKING hate the internet so god DAMN much... FUCK! Shitposting, honest to...god...fucking hope your mother CHOKES on her own feces in hell you...COCK SUCKER. But oooooooooohhhhhhhhhhhh I know my post is CRINGE!! ISN'T IT??? Cringe, cringe, CRINGEY cringe, based, cringe, based, REDDIT?? CRINGE!! BASED? CRINGE!! ZOOM?? CRINGE!! ONIONS?? REDDIT, BASED....BASED!! AAAAAAAAAAAAAAAAAAAAAAAAAA
+              </p>
+          </div>
+          <!-- RightPanel -->
+          <div class="col-5 col-sm-3 rPanel" id="imgPanel">
+            <h2>About me</h2>
+            <img src="https://i1.sndcdn.com/avatars-000194715996-owy5cu-t500x500.jpg" class="imgIcon">
+          </div>            
+        </div>
+
+        <div class="col-sm-0" id="colLR"></div>
+
+      </div>
+
+      <!-- Second Row -->
+      <div class="row">
+        <div class="col-md d-flex justify-content-center" id="secondaryPanel">
+          <!-- LeftPanel -->
+          <div class="col-5 col-sm-5 lPanel" id="imgPanel">
+            <h2>What the fuck!</h2>
+            <img src="https://intermilan.bynder.com/m/7c07a475884373e0/webimage-FTP_20221016104016_1863983487.png">
+          </div>
+          <!-- RightPanel -->
+          <div class="col-5 col-sm-7 rPanel" id="textPanel">
+            <p>
+              "Who’s joe?" a distant voice asks.<br>
+              Instantly everyone nearby hears the sound of 1,000s of bricks rapidly shuffling towards his location.<br>
+              The earth itself seemed to cry out in agony, until finally the ground itself split open and a horrific creature crawled from the ground, covered in mucus and tar.<br>
+              ”Joe Momma…” the creature whispered.<br>
+              The man cried out in pain as he disintegrated into dust, and the whole world fell silent in fear.<br>
+              "I did a little trolling." the wretched creature remarked before burrowing back into the earth.
+            </p>
+          </div>            
         </div>
 
         <div class="col-sm-0" id="colLR"></div>
       </div>
     </div>
-    
+  <main-footer></main-footer>
     <!-- Footer -->
-    <main-footer></main-footer>
   </body>
 </html>

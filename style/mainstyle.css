@@ -1,36 +1,11 @@
-/* *********************** */
-/* *** FONTS AND STYLE *** */
-/* *********************** */
-h1, h2{
-    font-style:italic;
+/* ************** */
+/* *** NAVBAR *** */
+/* ************** */
+
+.navbar-collapse {
+    background: var(--siteMainColor);
 }
 
-body {
-    font-family: "DM Sans";
-    font-size: 1.25rem;
-    /*text-shadow: 0.05rem 0.05rem 0.5rem #747474;*/
-}
-
-/* ************************ */
-/* *** SIZES AND SPACES *** */
-/* ************************ */
-:root {
-    /*overflow-y: hidden;*/
-}
-
-#gridMainPanel {
-    background-color: var(--site2ndColor);
-    padding: 0.5rem 1rem; /*up / left*/   
-}
-
-.imgIcon {
-    width: 100%;
-}
-
-
-/* *********************************** */
-/* *** POSITIONS, MARGINS, BORDERS *** */
-/* *********************************** */
 .navbar {
     height: 3.5rem;
 }
@@ -45,22 +20,75 @@ body {
     border: none;
 }
 
-#mainPanel {
-    padding: 5rem 1rem;
-}
 
-/* ************** */
-/* *** COLORS *** */
-/* ************** */
-:root{
+/* ************ */
+/* *** BODY *** */
+/* ************ */
+:root {
+    /*overflow-y: hidden;*/
     --siteMainColor: #f0e68c; /*#574cf1;*/
     --site2ndColor: #bdb76b; /*#81a4e4;*/
-    
 }
+
 .siteMainColor {
     background-color:var(--siteMainColor);
 }
 
 .site2ndColor {
     background-color:var(--site2ndColor);
+}
+
+.imgIcon {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2{
+    font-family: "Bebas Neue";
+}
+
+body {
+    font-family: "DM Sans";
+    font-size: 1.15rem;
+    /*text-shadow: 0.05rem 0.05rem 0.5rem #747474;*/
+}
+
+#mainPanel {
+    padding-top: 4rem;
+}
+
+#secondaryPanel {
+    padding-top: 2rem;
+}
+
+#gridMainPanel {
+    background-color: var(--site2ndColor);
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-bottom: 5rem;
+}
+
+.lPanel {
+    padding-right: 1rem;
+    word-wrap: break-word;
+}
+
+.rPanel {
+    word-wrap: break-word;
+}
+
+#textPanel {
+    padding-top: 2.25rem;
+}
+
+#imgPanel {
+}
+
+footer {
+    padding: 1.5rem;
+    background-color: var(--siteMainColor);
+    font-size: 0.75rem;
 }
