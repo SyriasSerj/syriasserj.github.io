@@ -1,53 +1,43 @@
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SyriasSerj</title>
+    <script src="js/template.js" type="text/javascript" defer></script>
 
-    <!--style-->
-    <link href="style/mainstyle.css" rel="stylesheet">
-
-    <!-- fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Sans|Manrope|Bebas Neue">
-
+    <main-head></main-head>
+    
     <!-- jQuery Slim Min -->
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
     <!-- jQuery loading HTML -->
-      <script>
-        $(function(){
-          $("#leftPanel").load("/include/leftPanel.html"); 
-        });
-      </script> 
-      <script>
-        $(function(){
-          $("#navbar").load("/include/navbar.html"); 
-        });
-      </script>
-      <script>
-        $(function(){
-          $("#rightPanel").load("/include/rightPanel.html"); 
-        });
-      </script> 
+    <script>
+      $(function(){
+        $("#leftPanel").load("/include/leftPanel.html"); 
+      });
+    </script> 
+    <script>
+      $(function(){
+        $("#rightPanel").load("/include/rightPanel.html"); 
+      });
+    </script>
 
   </head>
-  <!-------------------->
+
   <body>
     <!-- Navbar -->     
-    <nav id="navbar"></nav>
+    <main-navbar></main-navbar>
 
     <div class="container-fluid">
       <div class="row" id="gridMainPanel">
-        <div class="col-sm-0 col-sm-2" id="colLR"></div>
+        <div class="col-sm-0" id="colLR"></div>
         
-        <div class="col-md-8 d-flex" id="mainPanel">
-          <div class="col-md-6" id="leftPanel"></div>
-          <div class="col-md-2" id="rightPanel"></div>
+        <div class="col-md d-flex justify-content-center" id="mainPanel">
+          <div class="col-5 col-sm-9" id="leftPanel"></div>
+          <div class="col-5 col-sm-3" id="rightPanel"></div>
         </div>
 
-        <div class="col-sm-0 col-sm-2" id="colLR"></div>
+        <div class="col-sm-0" id="colLR"></div>
       </div>
     </div>
-  
-  
+    
+    <!-- Footer -->
+    <main-footer></main-footer>
   </body>
 </html>

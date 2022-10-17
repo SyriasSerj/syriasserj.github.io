@@ -1,4 +1,8 @@
 class Footer extends HTMLElement {
+    constructor() {
+      super();
+    }
+
     connectedCallback() {
       this.innerHTML = `    
         <footer>            
@@ -7,13 +11,19 @@ class Footer extends HTMLElement {
       `;
     }
   }
+
   customElements.define('main-footer', Footer);
 
 
   class Head extends HTMLElement {
+    constructor() {
+      super();
+    }
+
     connectedCallback() {
       this.innerHTML = ` 
-      <head>   
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>SyriasSerj</title>
@@ -24,33 +34,20 @@ class Footer extends HTMLElement {
   
       <!-- fonts -->
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Sans|Manrope|Bebas Neue">
-  
+
       <!-- jQuery Slim Min -->
       <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-      <!-- jQuery loading HTML -->
-        <script>
-          $(function(){
-            $("#leftPanel").load("/include/leftPanel.html"); 
-          });
-        </script> 
-        <script>
-          $(function(){
-            $("#navbar").load("/include/navbar.html"); 
-          });
-        </script>
-        <script>
-          $(function(){
-            $("#rightPanel").load("/include/rightPanel.html"); 
-          });
-        </script>
-  
-    </head>
       `;
     }
   }
   customElements.define('main-head', Head);
 
   class Navbar extends HTMLElement {
+
+    constructor() {
+      super();
+    }
+
     connectedCallback() {
       this.innerHTML = `
       <!DOCTYPE html>
