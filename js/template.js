@@ -29,7 +29,7 @@ class Footer extends HTMLElement {
       <!--style-->
       <link href="/style/mainstyle.css" rel="stylesheet">
       <!-- fonts -->
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Sans|Manrope|Bebas Neue">
+      <link rel="stylesheet preload" as="font" href="https://fonts.googleapis.com/css?family=DM Sans|Manrope|Bebas Neue">
       <!-- jQuery Slim Min -->
       <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
       `;
