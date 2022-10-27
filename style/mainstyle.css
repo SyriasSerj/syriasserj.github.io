@@ -51,9 +51,14 @@ h1, h2{
 }
 
 body {
-    font-family: "DM Sans";
-    font-size: 1.15rem;
+    font-family: "DM Sans"!important;
+    font-size: 1.10rem!important;
     /*text-shadow: 0.05rem 0.05rem 0.5rem #747474;*/
+}
+
+.dark-theme {
+    background-color: darkslategray!important;
+    color: beige!important;
 }
 
 #mainPanel {
@@ -85,6 +90,21 @@ body {
 }
 
 #imgPanel {
+}
+
+#socialGrid {
+}
+
+.socialGridOpts {
+    text-align: center;
+    padding: 4rem 3rem 0rem 3rem; /*top right bottom left */
+    padding-left: min(2px);
+    padding-right: min(2px);
+}
+
+.socialGridOpts img {
+    width:3rem;
+    min-width: 35px;
 }
 
 footer {

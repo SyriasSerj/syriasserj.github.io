@@ -15,6 +15,7 @@ class Footer extends HTMLElement {
 
   customElements.define('main-footer', Footer);
 
+/////////////////////////////////////////////////////////
 
   class Head extends HTMLElement {
     constructor() {
@@ -32,10 +33,13 @@ class Footer extends HTMLElement {
       <link rel="stylesheet preload" as="font" href="https://fonts.googleapis.com/css?family=DM Sans|Manrope|Bebas Neue">
       <!-- jQuery Slim Min -->
       <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
       `;
     }
   }
   customElements.define('main-head', Head);
+
+/////////////////////////////////////////////////////////
 
   class Navbar extends HTMLElement {
     constructor() {
@@ -66,9 +70,13 @@ class Footer extends HTMLElement {
                 </li>
               </ul>
             </div>
+            <!-- Dark Theme button -->
+            <!--<button onclick="btnDarkTheme()">DM</button> --!>
         </nav>
         `
         }
     }
     
   customElements.define('main-navbar', Navbar);
+
+  /////////////////////////////////////////////////////////
