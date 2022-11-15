@@ -1,8 +1,14 @@
 <html lang="en">
   <head>
-    <!-- Load custom templates -->
-    <script src="js/template.js" type="text/javascript" defer></script>
-    <main-head></main-head>
+
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>SyriasSerj</title>
+  
+    <!--style-->
+    <link href="/style/mainstyle.css" rel="stylesheet">
+    <!-- jQuery Slim Min -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
     
     <!--boostrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -10,116 +16,56 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- jQuery Slim Min -->
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-          <!-- custom functions -->
-          <script src="/js/customfuncs.js"></script>
+    <!-- custom functions -->
+    <script src="/js/customfuncs.js"></script>
 
   </head>
 
   <body>
-    <!-- Navbar -->
-    <main-navbar></main-navbar>
-
     <!-- Main Content -->
-    <div class="container-fluid" id="gridMainPanel">
-      
+    <div class="container-fluid" id="gridMainPanel">   
       <!-- First row -->
       <div class="row" >
-        <div class="col-sm-0 col-1" id="colLR"></div>
-        <div class="col-md d-flex justify-content-center" id="mainPanel">
-          
-          <!-- LeftPanel -->
-          <div class="col-5 col-sm-9 lPanel" id="textPanel">
-              <p>
-                Hey, I'm Sergio, glad to see you here!<br>
-                <b>Born and raised in a small town near Lucca, Italy in what's probably the smallest bedroom ever.</b> IT lover, music enjoyer, somewhat-ok guitarist and musician, amateur photographer.<br>
-                <b>90% of my free time</b> you can find me recording new music ideas and/or mixing songs, taking photos of everything inspires me, listening to old&new music exploring and expanding my taste, playing videogames.
-                <br><b>The remaining 10%</b> I'm usually sleeping or, less likely, I'm awake – but quite <b><i>loopy</i></b> from oversleeping.<br><br>
-                I used to <b>manage the back-end and the front-end</b> of the website <a style="font-weight: bold;" href="http://ranocchiate.com">Ranocchiate</a>, an FC Inter satirical blog on football. I rented, installed and customized the VPS for setting up and using Wordpress, Apache, PHP and other applications to make it light, fast and as optimized as possible.
-              </p>
-          </div>
-          <!-- RightPanel -->
-          <div class="col-5 col-sm-3 rPanel" id="imgPanel">
-            <h2>Heya!</h2>
-            <img src="https://i1.sndcdn.com/avatars-000194715996-owy5cu-t500x500.jpg" class="imgIcon">
-          </div>            
+        <div class="col-md justify-content-center" id="landingPanel">
+            <p class="landingTitle">Sergio Bianchini<br><br></p>
+
+            <h2>PORTFOLIO</h2>
+
+            <p>Musician, mixing engineer, photographer.
+              <br>Sometimes worker, but not in a competitive way.
+            </p>
         </div>
-
-        <div class="col-sm-0 col-1" id="colLR"></div>
-
       </div>
+ 
 
-      <!-- Second Row -->
+     <!-- Second row -->
       <div class="row">
         <div class="col-sm-0 col-1" id="colLR"></div>
-        <div class="col-md d-flex justify-content-center" id="secondaryPanel">
-
+        <div class="col-md d-flex justify-content-center" id="mainPanel">
           <!-- LeftPanel -->
-          <div class="col-5 col-sm-5 lPanel" id="imgPanel">
-            <h2>What's this all about?</h2>
-            <img src="https://intermilan.bynder.com/m/7c07a475884373e0/webimage-FTP_20221016104016_1863983487.png">
-          </div>
-          <!-- RightPanel -->
-          <div class="col-5 col-sm-7 rPanel" id="textPanel">
-            <p>
-              Probably this site wasn't needed, I know. But it was hardcoded by me, mostly because I forgot everything and I needed some training once again. It's still not optimized but at least it's working.<br>
-              You can find different tabs on this site just to let you see, hear and judge everything I (kinda) can do. <br>
-              From music, to photos, to work and all that stuff. <br>
-              Other than this, I'm super into <b>videogames</b> (I own a nice gaming PC and an Xbox Series X), memes, funny videos of cats (who doesn't?) and eating 24/7.<br>
-              <b>FC Inter Milan supporter</b>, season ticket holder since 2019 - also supporting <b>Borussia Dortmund</b>, been there twice.
-            </p>
+          <div class="col-5 col-sm-4 lPanel" id="imgPanel">
+            <h2>Heya!</h2>
+            <img src="include/img/propic.jpg" class="imgIcon">
           </div>            
+          <!-- RightPanel -->
+          <div class="col-5 col-sm-8 rPanel" id="textPanel">
+            <p>
+              Hey, I'm Sergio, glad to see you here!<br>
+              <b>Born and raised in a small town near Lucca, Italy in what's probably the smallest bedroom ever.</b> IT lover, music enjoyer, somewhat-ok guitarist and musician, amateur photographer.<br>
+              <b>90% of my free time</b> you can find me recording new music ideas and/or mixing songs, taking photos of everything inspires me, listening to old&new music exploring and expanding my taste, playing videogames.
+              <br><b>The remaining 10%</b> I'm usually sleeping or, less likely, I'm awake – but quite <b><i>loopy</i></b> from oversleeping.<br><br>
+              I used to <b>manage the back-end and the front-end</b> of the website <a style="font-weight: bold;" href="http://ranocchiate.com">Ranocchiate</a>, an FC Inter satirical blog on football. I rented, installed and customized the VPS for setting up and using Wordpress, Apache, PHP and other applications to make it light, fast and as optimized as possible.
+            </p>
+          </div>
         </div>
-
         <div class="col-sm-0 col-1" id="colLR"></div>
-
-        <!-- Third Row -->
-        <div class="row" >
-          <div class="col-sm-0 col-1" id="colLR"></div>
-          <div class="col-md d-flex justify-content-center" id="secondaryPanel">
-            
-            <!-- LeftPanel -->
-            <div class="col-5 col-sm-9 lPanel" id="textPanel">
-                <p>
-                  If you wanna drop me a message, ask me anything about music/mixing songs/photos, talk about the future or having a deep conversation on why the elders are running the world check one of the following social and come say hi!
-                </p>
-            </div>
-            <!-- RightPanel -->
-            <div class="col-5 col-sm-3 rPanel" id="imgPanel">
-              <h2>Social links</h2>
-              <img src="/" class="imgIcon">
-            </div>            
-          </div>
-  
-          <div class="col-sm-0 col-1" id="colLR"></div>
-  
-        </div>
-
-        <!-- Social grid -->
-        <div class="row socialGrid">
-          <div class="col-sm-0 col-1" id="colLR"></div>
-          <!-- center content -->
-          <div class="col-md d-flex justify-content-center" id="socialGrid">
-            <div class="col socialGridOpts" >
-              <a href="https://instagram.com/kernelpanic__"><img src="/include/img/instagram.png"></a>
-            </div>
-            <div class="col socialGridOpts">
-              <a href="mailto:sergio.bianchini@live.it"><img src="/include/img/gmail.png"></a>
-            </div>
-            <div class="col socialGridOpts">
-              <a href="https://soundcloud.com/blueholeproject"><img src="/include/img/soundcloud.png"></a>
-            </div>
-            <div class="col socialGridOpts">
-              <a href="https://soundcloud.com/blueholeproject"><img src="/include/img/spotify.png"></a>
-            </div>
-          </div>
-
-          <div class="col-sm-0 col-1" id="colLR"></div>
-        </div>
-
       </div>
-
     </div>
-  <main-footer></main-footer>
-    <!-- Footer -->
+
   </body>
+  <!-- Footer -->
+  <footer>            
+    created by Sergio Bianchini, 2022 - all rights reserved.<br>
+    powered by Bootstrap, GitHub and some coding.
+  </footer>
 </html>

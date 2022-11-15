@@ -1,4 +1,10 @@
 /* ************** */
+/* *** font *** */
+/* ************** */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda:opsz@6..96&family=DM+Sans&display=swap');
+
+/* ************** */
 /* *** NAVBAR *** */
 /* ************** */
 
@@ -26,8 +32,10 @@
 /* ************ */
 :root {
     /*overflow-y: hidden;*/
-    --siteMainColor: #f0e68c; /*#574cf1;*/
-    --site2ndColor: #bdb76b; /*#81a4e4;*/
+    --siteMainColor: #F25E3D; /*#574cf1;*/
+    --site2ndColor: #F2AD85; /*#81a4e4;*/
+    --site3rdColor: #D9B5A0; /*https://colorhunt.co/palette/e97777ff9f9ffcddb0fffad7 */
+    --site4thColor: #F28444;
 }
 
 .siteMainColor {
@@ -46,7 +54,17 @@ img {
     width: 100%;
 }
 
-h1, h2{
+.landingTitle {
+    font-family: "Bodoni Moda", serif;
+    font-size: 5rem!important;
+    font-weight: 100!important;
+}
+
+#landingPanel {
+    text-shadow: 0px 0px 10px #000000;
+}
+
+h2 {
     font-family: "Bebas Neue";
 }
 
@@ -61,8 +79,22 @@ body {
     color: beige!important;
 }
 
+#landingPanel {
+    height: 100vh;
+    background-image: url('../include/img/portfolio-2.jpg');
+    /* flex-box thing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover; 
+    margin-bottom: 30px;
+    color:white;
+    text-align: center;
+}
+
 #mainPanel {
-    padding-top: 4rem;
+    padding-top: 3rem;
 }
 
 #secondaryPanel {
@@ -71,8 +103,6 @@ body {
 
 #gridMainPanel {
     background-color: var(--site2ndColor);
-    padding-top: 0.5rem;
-    padding-left: 1rem;
     padding-bottom: 5rem;
 }
 
