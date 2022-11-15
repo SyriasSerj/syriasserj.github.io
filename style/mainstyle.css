@@ -82,6 +82,7 @@ body {
 #landingPanel {
     height: 100vh;
     background-image: url('../include/img/portfolio-2.jpg');
+    background-position: center;
     /* flex-box thing */
     display: flex;
     flex-direction: column;
