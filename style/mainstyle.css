@@ -4,6 +4,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda:opsz@6..96&family=DM+Sans&display=swap');
 
+/* @media only screen and (max-width: 600px) {
+    <script>
+    function myFunction() {
+        var element = document.getElementById("col-md");
+        element.classList.remove("d-flex");
+      }
+    </script>
+  } */
+
 /* ************** */
 /* *** NAVBAR *** */
 /* ************** */
@@ -36,6 +45,7 @@
     --site2ndColor: #F2AD85; /*#81a4e4;*/
     --site3rdColor: #D9B5A0; /*https://colorhunt.co/palette/e97777ff9f9ffcddb0fffad7 */
     --site4thColor: #F28444;
+    --site5thColor: #dea07b;
 }
 
 .siteMainColor {
@@ -89,31 +99,36 @@ body {
     align-items: center;
     justify-content: center;
     background-size: cover; 
-    margin-bottom: 30px;
     color:white;
     text-align: center;
 }
 
 #mainPanel {
-    padding-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 #secondaryPanel {
     padding-top: 2rem;
 }
 
+.secondaryBK {
+    background-color: var(--site5thColor);
+}
+
 #gridMainPanel {
     background-color: var(--site2ndColor);
-    padding-bottom: 5rem;
 }
 
 .lPanel {
     padding-right: 1rem;
     word-wrap: break-word;
+    text-align: left;
 }
 
 .rPanel {
     word-wrap: break-word;
+    text-align: right;
 }
 
 #textPanel {
@@ -122,6 +137,7 @@ body {
 
 #imgPanel {
 }
+
 
 #socialGrid {
 }
