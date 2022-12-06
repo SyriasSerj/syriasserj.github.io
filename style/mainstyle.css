@@ -136,6 +136,16 @@ body {
     }
   }
 
+.gradLightToDark {
+    background-image: linear-gradient(var(--site2ndColor), var(--site5thColor));
+    height: 3rem;
+}
+
+.gradDarkToLight {
+    background-image: linear-gradient(var(--site5thColor), var(--site2ndColor));
+    height: 3rem;
+}
+
 #socialGrid {
 }
 
