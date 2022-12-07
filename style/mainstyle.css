@@ -113,9 +113,18 @@ body {
 }
 
 .lPanel {
-    padding-right: 1rem;
     word-wrap: break-word;
     text-align: left;
+}
+
+@media (min-width: 576px)  {
+    .lPanel {
+        padding-right: 0.5rem;
+    }
+
+    .rPanel {
+        padding-left: 0.5rem;
+    }
 }
 
 .rPanel {
@@ -127,14 +136,9 @@ body {
     padding-top: 2.25rem;
 }
 
-#imgPanel {
+p {
+    text-align: justify;
 }
-
-@media (max-width: 550px) {
-    p {
-      text-align: justify;
-    }
-  }
 
 .gradLightToDark {
     background-image: linear-gradient(var(--site2ndColor), var(--site5thColor));
