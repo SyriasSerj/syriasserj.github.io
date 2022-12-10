@@ -70,6 +70,11 @@ h2 {
     font-family: "Bebas Neue";
 }
 
+h3 {
+    color: var(--siteMainColor);
+    font-weight: bold!important;
+}
+
 body {
     font-family: "DM Sans"!important;
     font-size: 1.10rem!important;
@@ -104,6 +109,14 @@ body {
     padding-top: 2rem;
 }
 
+#workPanel {
+    padding-top: 2rem;
+}
+
+#lastPanel {
+    padding-bottom: 2rem;
+}
+
 .secondaryBK {
     background-color: var(--site5thColor);
 }
@@ -132,6 +145,11 @@ body {
     text-align: right;
 }
 
+.cPanel {
+    word-wrap: break-word;
+    text-align: center;
+}
+
 #textPanel {
     padding-top: 2.25rem;
 }
@@ -150,7 +168,10 @@ p {
     height: 3rem;
 }
 
-#socialGrid {
+#socialImgs {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: auto;
 }
 
 .socialGridOpts {
