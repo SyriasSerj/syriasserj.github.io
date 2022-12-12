@@ -107,7 +107,7 @@ img {
 
 #landingPanel {
     height: 100vh;
-    background-image: url('../include/img/portfolio-2.jpg');
+    background-image: url('../include/img/photoCarousel/portfolio.jpg');
     background-position: center;
     /* flex-box thing */
     display: flex;
@@ -123,7 +123,7 @@ img {
     padding-top: 2rem;
 }
 
-#mainPanel {
+.mainPanel {
     padding-bottom: 2rem;
 }
 
@@ -169,7 +169,7 @@ img {
 }
 
 #careerTxt {
-    
+    font-size: 1rem;
 }
 
 p {
@@ -186,7 +186,14 @@ p {
     height: 3rem;
 }
 
-#socialGrid {
+#socialImgs {
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 3rem;
+}
+
+#socialPanel {
+    max-width: 900px;
 }
 
 .socialGridOpts {
@@ -205,4 +212,5 @@ footer {
     padding: 1.5rem;
     background-color: var(--siteMainColor);
     font-size: 0.75rem;
+    font-weight: 500!important;
 }
