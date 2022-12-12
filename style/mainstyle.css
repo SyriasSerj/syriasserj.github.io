@@ -11,29 +11,32 @@
 - H3 - Josefin Sans
 */
 
-
-
 .landingTitle {
     font-family: "Antic Didone"!important;
     font-size: 6rem!important;
     font-weight: 100!important;
+    /*color: var(--siteMainColor);*/
+    text-shadow: 0rem 0rem 1rem black;
 }
 
 subtitle {
     font-family: "Josefin Sans"!important;
     font-weight: 300!important;
     font-size: 1.30rem!important;
+    color: var(--siteMainColor);
 }
 
 h2 {
     font-family: "Josefin Sans"!important;
     font-weight: 500!important;
     font-size: 2.5rem!important;
+    color: var(--siteMainColor);
 }
 
 h3 {
     font-family: "Josefin Sans"!important;
     font-weight: 600!important;
+    color: var(--siteMainColor)
 }
 
 body {
@@ -64,7 +67,6 @@ body {
     border: none;
 }
 
-
 /* ************ */
 /* *** BODY *** */
 /* ************ */
@@ -75,6 +77,7 @@ body {
     --site3rdColor: #D9B5A0; /*https://colorhunt.co/palette/e97777ff9f9ffcddb0fffad7 */
     --site4thColor: #F28444;
     --site5thColor: #dea07b;
+    --bs-link-color: rgb(173, 0, 0)!important;
 }
 
 .siteMainColor {
@@ -116,8 +119,11 @@ img {
     text-align: center;
 }
 
-#mainPanel {
+#titlePanel {
     padding-top: 2rem;
+}
+
+#mainPanel {
     padding-bottom: 2rem;
 }
 
@@ -133,11 +139,6 @@ img {
     background-color: var(--site2ndColor);
 }
 
-.lPanel {
-    word-wrap: break-word;
-    text-align: left;
-}
-
 @media (min-width: 576px)  {
     .lPanel {
         padding-right: 0.5rem;
@@ -148,6 +149,16 @@ img {
     }
 }
 
+.lPanel {
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.cPanel {
+    word-wrap: break-word;
+    text-align: center;
+}
+
 .rPanel {
     word-wrap: break-word;
     text-align: right;
@@ -155,6 +166,10 @@ img {
 
 #textPanel {
     padding-top: 2.25rem;
+}
+
+#careerTxt {
+    
 }
 
 p {
