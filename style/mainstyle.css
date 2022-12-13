@@ -21,7 +21,7 @@
 
 subtitle {
     font-family: "Josefin Sans"!important;
-    font-weight: 300!important;
+    font-weight: 400!important;
     font-size: 1.30rem!important;
     color: var(--siteMainColor);
 }
@@ -41,7 +41,8 @@ h3 {
 
 body {
     font-family: "Montserrat"!important;
-    font-size: 1.10rem!important;
+    font-size: 1.0rem!important;
+    overflow-x: hidden; 
     /*text-shadow: 0.05rem 0.05rem 0.5rem #747474;*/
 }
 
