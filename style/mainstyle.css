@@ -11,6 +11,10 @@
 - H3 - Josefin Sans
 */
 
+html {
+    overflow-x: hidden;
+}
+
 .landingTitle {
     font-family: "Antic Didone"!important;
     font-size: 5.5rem!important;
@@ -42,7 +46,7 @@ h3 {
 body {
     font-family: "Montserrat"!important;
     font-size: 1.0rem!important;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     /*text-shadow: 0.05rem 0.05rem 0.5rem #747474;*/
 }
 
