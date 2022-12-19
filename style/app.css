@@ -60,6 +60,10 @@
     transition-delay: 500ms;
 }
 
+.socialImgs:nth-child(7) {
+    transition-delay: 600ms;
+}
+
 .show {
     opacity:1;
     filter: blur(0);
