@@ -48,6 +48,7 @@ body {
     font-size: 1.0rem!important;
     overflow-x: hidden;
     /*text-shadow: 0.05rem 0.05rem 0.5rem #747474;*/
+    overflow-anchor: none;
 }
 
 /* ************** */

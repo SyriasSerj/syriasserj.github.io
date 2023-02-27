@@ -1,6 +1,9 @@
-/*$(window).resize(function(){
+$(window).scroll(function() {
+  sessionStorage.scrollTop = $(this).scrollTop();
+});
 
-  if($(window).width() <= 767){
-    $('#mainPanel').removeClass('d-flex');
+$(document).ready(function() {
+  if (sessionStorage.scrollTop != "undefined") {
+    $(window).scrollTop(sessionStorage.scrollTop);
   }
-});*/
+});
