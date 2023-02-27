@@ -1,3 +1,4 @@
+//remove chrome anchor scroll
 $(window).scroll(function() {
   sessionStorage.scrollTop = $(this).scrollTop();
 });

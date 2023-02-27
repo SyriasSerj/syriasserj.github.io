@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", function(event){
         }); //animation from bottom to top
 
     tl.to(".landPanelAnim", {
-        opacity:1, duration:1
+        opacity:1, duration:1.2
         },
-        "0.1"
+        "0.2"
         ); //animation for fade in starting 0.1 seconds after the first anim
     
     //-------------------------
@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", function(event){
         scrollTrigger: "#aboutMe",
         x:0,
         duration:0.75,
-        ease: "power2.out"
+        ease: "power2.out",
+        start: "top center"
     });
     //Right Column
     gsap.set(".aboutR", {

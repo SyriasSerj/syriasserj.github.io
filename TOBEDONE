@@ -1,7 +1,7 @@
-- insert music player or embed soundcloud?
-- photo player
-- pics progressive load from PS
-- lazyload
-- dark theme switch
-
-- optimize loading - bootstrap css js and so on needs to be loaded in every single page and that's not great, no other choice (apart from .php)
+- maybe a small menu in the top right
+- color bar when on Chrome mobile
+- tweak GSAP animations
+--- scrolltrigger when going up?
+--- delay animation on scrolling when on mobile
+--- different triggers for each column to optimize mobile
+- jobs separation - new style?
