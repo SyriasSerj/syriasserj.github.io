@@ -1,5 +1,29 @@
 //wait for DOM to load, then run GSAP
 document.addEventListener("DOMContentLoaded", function(event){
+    //logo top left RGB
+    //S
+    gsap.fromTo(".backToTop1", {
+        color: function(index, target, targets) {
+          return "hsl(" + ((index / targets.length) * 360) + ", 100%, 50%)";
+        }
+      },{
+        color: "hsl(+=360, +=0%, +=0%)",
+        duration: 5,
+        repeat: -1,
+        ease: "none"
+      });
+    //B
+    gsap.fromTo(".backToTop2", {
+        color: function(index, target, targets) {
+          return "hsl(" + ((index / targets.length) * 360) + ", 100%, 50%)";
+        }
+      },{
+        color: "hsl(+=360, +=0%, +=0%)",
+        duration: 5,
+        repeat: -1,
+        ease: "none"
+      },"0.35");
+
     //Landing Page animation
     gsap.set(".landPanelAnim", {opacity:0, y:"200%"}); //setting opacity 0 and Y offscreen to manipulate them afterwards
     var tl = gsap.timeline({repeat: 0}); //creating GSAP timeline to do multiple anims together
@@ -20,18 +44,23 @@ document.addEventListener("DOMContentLoaded", function(event){
         x:"-200%"
     });
     gsap.to(".aboutL", {
-        scrollTrigger: "#aboutMe",
+        scrollTrigger: {
+            trigger: "#aboutMe",
+            start: "top 50%"
+        },
         x:0,
         duration:0.75,
-        ease: "power2.out",
-        start: "top center"
+        ease: "power2.out"
     });
     //Right Column
     gsap.set(".aboutR", {
         x:"200%"
     });
     gsap.to(".aboutR", {
-        scrollTrigger: "#aboutMe",
+        scrollTrigger: {
+            trigger: "#aboutMe",
+            start: "top 50%"
+        },
         x:0,
         duration:0.75,
         ease: "power2.out"
@@ -44,7 +73,10 @@ document.addEventListener("DOMContentLoaded", function(event){
         x:"-200%"
     });
     gsap.to(".musicL", {
-        scrollTrigger: "#musicPanel",
+        scrollTrigger: {
+            trigger: "#musicPanel",
+            start: "top 50%"
+        },
         x:0,
         duration:0.75,
         ease: "power2.out"
@@ -54,7 +86,10 @@ document.addEventListener("DOMContentLoaded", function(event){
         x:"200%"
     });
     gsap.to(".musicR", {
-        scrollTrigger: "#musicPanel",
+        scrollTrigger: {
+            trigger: "#musicPanel",
+            start: "top 50%"
+        },
         x:0,
         duration:0.75,
         ease: "power2.out"
@@ -67,7 +102,10 @@ document.addEventListener("DOMContentLoaded", function(event){
         x:"-200%"
     });
     gsap.to(".photosL", {
-        scrollTrigger: "#photoPanel",
+        scrollTrigger: {
+            trigger: "#photoPanel",
+            start: "top 70%"
+        },
         x:0,
         duration:0.75,
         ease: "power2.out"
@@ -77,7 +115,10 @@ document.addEventListener("DOMContentLoaded", function(event){
         x:"200%"
     });
     gsap.to(".photosR", {
-        scrollTrigger: "#photoPanel",
+        scrollTrigger: {
+            trigger: "#photoPanel",
+            start: "top 70%"
+        },
         x:0,
         duration:0.75,
         ease: "power2.out"
@@ -90,7 +131,10 @@ document.addEventListener("DOMContentLoaded", function(event){
         x:"-200%"
     });
     gsap.to(".careerL", {
-        scrollTrigger: "#careerPanel",
+        scrollTrigger: {
+            trigger: "#careerPanel",
+            start: "top 70%"
+        },
         x:0,
         duration:0.75,
         ease: "power2.out"
@@ -100,7 +144,10 @@ document.addEventListener("DOMContentLoaded", function(event){
         x:"200%"
     });
     gsap.to(".careerR", {
-        scrollTrigger: "#careerPanel",
+        scrollTrigger: {
+            trigger: "#careerPanel",
+            start: "top 70%"
+        },
         x:0,
         duration:0.75,
         ease: "power2.out"
@@ -111,7 +158,10 @@ document.addEventListener("DOMContentLoaded", function(event){
         x:"200%"
     });
     gsap.to(".career1Job", {
-        scrollTrigger: ".career1Job",
+        scrollTrigger: {
+            trigger: ".career1Job",
+            start: "top 70%"
+        },
         x:0,
         duration:0.75,
         ease: "power2.out"
@@ -121,7 +171,10 @@ document.addEventListener("DOMContentLoaded", function(event){
         x:"-200%"
     });
     gsap.to(".career2Job", {
-        scrollTrigger: ".career2Job",
+        scrollTrigger: {
+            trigger: ".career2Job",
+            start: "top 70%"
+        },
         x:0,
         duration:0.75,
         ease: "power2.out"
@@ -131,7 +184,10 @@ document.addEventListener("DOMContentLoaded", function(event){
         x:"200%"
     });
     gsap.to(".career3Job", {
-        scrollTrigger: ".career3Job",
+        scrollTrigger: {
+            trigger: ".career3Job",
+            start: "top 70%"
+        },
         x:0,
         duration:0.75,
         ease: "power2.out"
@@ -143,7 +199,10 @@ document.addEventListener("DOMContentLoaded", function(event){
         x:"-200%"
     });
     gsap.to(".socialTab", {
-        scrollTrigger: ".socialTab",
+        scrollTrigger: {
+            trigger: ".socialTab",
+            start: "top 90%"
+        },
         x:0,
         duration:0.75,
         ease: "power2.out"
@@ -157,7 +216,10 @@ document.addEventListener("DOMContentLoaded", function(event){
     gsap.set(".socialAnim6", {opacity:0, x:"-200%"}); //pre-setting props of all social icons
 
     var tl = gsap.timeline({
-        scrollTrigger: "#socialTab",
+        scrollTrigger: {
+            trigger: "#socialTab",
+            start: "top 90%"
+        },
         repeat: 0
     }); //creating timeline and animating each social icon in cascade only when #socialTab enters viewport
 
@@ -165,8 +227,8 @@ document.addEventListener("DOMContentLoaded", function(event){
     var socialXDrtn="0.6";
     var socialFadeDrtn="0.6"; 
 
-    tl.to(".socialAnim1", {x:"0", duration:socialXDrtn, ease:socialXEase});
-    tl.to(".socialAnim1", {opacity:1, duration:socialFadeDrtn},"0.1");
+    tl.to(".socialAnim1", {x:"0", duration:socialXDrtn, ease:socialXEase},0.5);
+    tl.to(".socialAnim1", {opacity:1, duration:socialFadeDrtn},"<0.1");
     tl.to(".socialAnim2", {x:"0", duration:socialXDrtn, ease:socialXEase}, "<0.1");
     tl.to(".socialAnim2", {opacity:1, duration:socialFadeDrtn}, "<0.1");
     tl.to(".socialAnim3", {x:"0", duration:socialXDrtn, ease:socialXEase}, "<0.1");

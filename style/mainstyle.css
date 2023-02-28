@@ -15,6 +15,29 @@ html {
     overflow-x: hidden;
 }
 
+@font-face {
+    font-family: "OpenBrush";
+    src: url(/include/fonts/OpenBrush.ttf) format("truetype");
+}
+p.customfont { 
+    font-family: "OpenBrush", Verdana, Tahoma;
+    font-size: 3rem;
+    -webkit-text-stroke: 1px black;
+    z-index:100;
+}
+
+.backToTop1 {
+    position: fixed;
+    top: 0;
+    left: 0.75rem;
+}
+
+.backToTop2 {
+    position: fixed;
+    top: 1rem;
+    left: 1.75rem;
+}
+
 .landingTitle {
     font-family: "Antic Didone"!important;
     font-size: 5.5rem!important;
