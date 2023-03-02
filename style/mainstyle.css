@@ -15,6 +15,26 @@ html {
     overflow-x: hidden;
 }
 
+/*RGB Logo*/
+.rgbLogo {
+    position: fixed;
+    left:0px;
+    opacity: 0;
+    z-index:999;
+}
+
+.backToTop1 {
+    position: fixed;
+    top: 0;
+    left: 0.75rem;
+}
+
+.backToTop2 {
+    position: fixed;
+    top: 0.9rem;
+    left: 1.65rem;
+}
+
 @font-face {
     font-family: "OpenBrush";
     src: url(/include/fonts/OpenBrush.ttf) format("truetype");
@@ -26,17 +46,7 @@ p.customfont {
     z-index:100;
 }
 
-.backToTop1 {
-    position: fixed;
-    top: 0;
-    left: 0.75rem;
-}
-
-.backToTop2 {
-    position: fixed;
-    top: 1rem;
-    left: 1.75rem;
-}
+/* ------------ */
 
 .landingTitle {
     font-family: "Antic Didone"!important;
