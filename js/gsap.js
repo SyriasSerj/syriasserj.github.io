@@ -216,8 +216,8 @@ document.addEventListener("DOMContentLoaded", function(event){
 
     var tl = gsap.timeline({
         scrollTrigger: {
-            trigger: "#socialTab",
-            start: "top 90%"
+            trigger: ".socialAnim1",
+            start: "top top"
         },
         repeat: 0
     }); //creating timeline and animating each social icon in cascade only when #socialTab enters viewport

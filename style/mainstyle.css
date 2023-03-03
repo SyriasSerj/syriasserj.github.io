@@ -213,7 +213,6 @@ img {
 
 .musicPrev, .musicNext {
     border-color: rgba(0, 0, 0, 0);
-    position: absolute;
     background: 0 0;
     align-items: center;
     justify-content: center;
