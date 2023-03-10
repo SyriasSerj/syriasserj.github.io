@@ -1,8 +1,8 @@
 //wait for DOM to load, then run GSAP
 document.addEventListener("DOMContentLoaded", function(event){
     //logo top left RGB
-    gsap.set(".rgbLogo", {x:"-200rem"}); //setting opacity 0 and X offscreen to manipulate them afterwards
-    var tl = gsap.timeline({
+    //gsap.set(".rgbLogo", {x:"-5rem"}); //setting opacity 0 and X offscreen to manipulate them afterwards
+    /*var tl = gsap.timeline({
         scrollTrigger: {
             trigger: "#aboutMe",
             start: "top top"
@@ -10,7 +10,31 @@ document.addEventListener("DOMContentLoaded", function(event){
         repeat: 0
     }); //creating GSAP timeline to do multiple anims together
     tl.to(".rgbLogo", { x:"0rem", duration:1.25, ease:"power2.out" }); //animation L/R
-    tl.to(".rgbLogo", { opacity:1, duration:1.25 },"<0"); //animation opacity delayed by 0.2sec
+    tl.to(".rgbLogo", { opacity:1, duration:1.25 },"<0"); //animation opacity delayed by 0.2sec */
+
+    /* 
+     TEST ANIMAZIONE
+    */
+     var actionLogo = gsap.to('.rgbLogo', {x:'60', duration:0.8, ease:'power2.in', paused:true});
+     var showHideLogo = gsap.to('.rgbLogo', {opacity:0, duration:1, ease:'power2.out'});
+
+     ScrollTrigger.create({
+       trigger: "#aboutMe",
+       start: "top top",
+       end: 99999,
+       onUpdate: ({progress, direction, isActive}) => {
+         if (direction == -1) {
+           actionLogo.play();
+           showHideLogo.play()
+         } if (direction == 1 ) {
+           actionLogo.reverse();
+           showHideLogo.reverse();
+         } else if (direction == 1 && isActive == true) {
+           showHideLogo.reverse()
+         }
+       }
+     });
+
       
     //S
     gsap.fromTo(".backToTop1", {
@@ -216,8 +240,8 @@ document.addEventListener("DOMContentLoaded", function(event){
 
     var tl = gsap.timeline({
         scrollTrigger: {
-            trigger: ".socialAnim1",
-            start: "top top"
+            trigger: ".socialTab",
+            start: "top 80%"
         },
         repeat: 0
     }); //creating timeline and animating each social icon in cascade only when #socialTab enters viewport
@@ -226,7 +250,7 @@ document.addEventListener("DOMContentLoaded", function(event){
     var socialXDrtn="0.6";
     var socialFadeDrtn="0.6"; 
 
-    tl.to(".socialAnim1", {x:"0", duration:socialXDrtn, ease:socialXEase},"<0.5");
+    tl.to(".socialAnim1", {x:"0", duration:socialXDrtn, ease:socialXEase},"<0.2");
     tl.to(".socialAnim1", {opacity:1, duration:socialFadeDrtn},"<0.1");
     tl.to(".socialAnim2", {x:"0", duration:socialXDrtn, ease:socialXEase}, "<0.1");
     tl.to(".socialAnim2", {opacity:1, duration:socialFadeDrtn}, "<0.1");

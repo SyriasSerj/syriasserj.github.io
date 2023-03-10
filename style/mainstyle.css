@@ -18,8 +18,9 @@ html {
 /*RGB Logo*/
 .rgbLogo {
     position: fixed;
-    left:0px;
-    opacity: 0;
+    right:4.3rem;
+    bottom:5rem;
+    opacity: 1;
     z-index:999;
 }
 
